@@ -1,0 +1,307 @@
+Paragraph-Simple 训练日志
+数据集: ssram
+训练参数: {'train_dataset': 'ssram', 'test_dataset': 'digtime+timing_ctrl+array_128_32_8t', 'task': 'classification', 'max_dist': 350, 'lr': 5e-05, 'num_gnn_layers': 4, 'num_head_layers': 2, 'hid_dim': 64, 'dropout': 0.3, 'use_bn': 0, 'act_fn': 'relu', 'src_dst_agg': 'concat', 'num_hops': 4, 'to_undirected': 1, 'train_sample_rate': 1.0, 'test_sample_rate': 1.0, 'use_ensemble': 0, 'num_ensemble': 3, 'ensemble_thresholds': '0.33,0.66'}
+
+Epoch 1/200 - 训练: loss=0.367600 accuracy=0.849500 precision=0.848100 recall=0.980200 f1=0.909400 auc=0.847600 
+Epoch 1/200 - 验证: loss=0.304200 accuracy=0.874800 precision=0.859300 recall=1.000000 f1=0.924300 auc=0.897400 
+【新的最佳模型！】Epoch 1
+测试集 digtime: loss=0.268100 accuracy=0.878900 precision=0.864000 recall=1.000000 f1=0.927000 auc=0.927400 
+测试集 timing_ctrl: loss=0.262900 accuracy=0.880700 precision=0.865700 recall=1.000000 f1=0.928000 auc=0.925600 
+测试集 array_128_32_8t: loss=0.323900 accuracy=0.874900 precision=0.860100 recall=1.000000 f1=0.924800 auc=0.859300 
+
+Epoch 2/200 - 训练: loss=0.309100 accuracy=0.876400 precision=0.865500 recall=0.994100 f1=0.925300 auc=0.878300 
+Epoch 2/200 - 验证: loss=0.299300 accuracy=0.881300 precision=0.866100 recall=0.999300 f1=0.927900 auc=0.896800 
+Epoch 3/200 - 训练: loss=0.305100 accuracy=0.877700 precision=0.866100 recall=0.995100 f1=0.926100 auc=0.880000 
+Epoch 3/200 - 验证: loss=0.300300 accuracy=0.881300 precision=0.866100 recall=0.999300 f1=0.927900 auc=0.896200 
+Epoch 4/200 - 训练: loss=0.301900 accuracy=0.878600 precision=0.866800 recall=0.995300 f1=0.926600 auc=0.881900 
+Epoch 4/200 - 验证: loss=0.296600 accuracy=0.881300 precision=0.866100 recall=0.999300 f1=0.927900 auc=0.896800 
+Epoch 5/200 - 训练: loss=0.298700 accuracy=0.879100 precision=0.868100 recall=0.994100 f1=0.926800 auc=0.886600 
+Epoch 5/200 - 验证: loss=0.288600 accuracy=0.881300 precision=0.866100 recall=0.999300 f1=0.927900 auc=0.900600 
+【新的最佳模型！】Epoch 5
+测试集 digtime: loss=0.255500 accuracy=0.900700 precision=0.887900 recall=0.996800 f1=0.939200 auc=0.928500 
+测试集 timing_ctrl: loss=0.256100 accuracy=0.894700 precision=0.879700 recall=1.000000 f1=0.936000 auc=0.928400 
+测试集 array_128_32_8t: loss=0.351100 accuracy=0.832200 precision=0.867600 recall=0.922700 f1=0.894300 auc=0.860300 
+
+Epoch 6/200 - 训练: loss=0.295100 accuracy=0.879700 precision=0.869800 recall=0.992300 f1=0.927000 auc=0.892200 
+Epoch 6/200 - 验证: loss=0.288000 accuracy=0.881300 precision=0.866100 recall=0.999300 f1=0.927900 auc=0.901400 
+【新的最佳模型！】Epoch 6
+测试集 digtime: loss=0.253600 accuracy=0.900700 precision=0.887900 recall=0.996800 f1=0.939200 auc=0.932000 
+测试集 timing_ctrl: loss=0.254700 accuracy=0.894700 precision=0.879700 recall=1.000000 f1=0.936000 auc=0.929600 
+测试集 array_128_32_8t: loss=0.363600 accuracy=0.832200 precision=0.867600 recall=0.922700 f1=0.894300 auc=0.861800 
+
+Epoch 7/200 - 训练: loss=0.292400 accuracy=0.881100 precision=0.871100 recall=0.992400 f1=0.927800 auc=0.894600 
+Epoch 7/200 - 验证: loss=0.282300 accuracy=0.881300 precision=0.866100 recall=0.999300 f1=0.927900 auc=0.903900 
+【新的最佳模型！】Epoch 7
+测试集 digtime: loss=0.255100 accuracy=0.900700 precision=0.887900 recall=0.996800 f1=0.939200 auc=0.929300 
+测试集 timing_ctrl: loss=0.255300 accuracy=0.894700 precision=0.879700 recall=1.000000 f1=0.936000 auc=0.927800 
+测试集 array_128_32_8t: loss=0.379100 accuracy=0.832200 precision=0.867600 recall=0.922700 f1=0.894300 auc=0.865300 
+
+Epoch 8/200 - 训练: loss=0.290300 accuracy=0.881900 precision=0.872100 recall=0.992300 f1=0.928300 auc=0.896200 
+Epoch 8/200 - 验证: loss=0.279100 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.902300 
+Epoch 9/200 - 训练: loss=0.288000 accuracy=0.883700 precision=0.874100 recall=0.991900 f1=0.929300 auc=0.897900 
+Epoch 9/200 - 验证: loss=0.278400 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.905100 
+【新的最佳模型！】Epoch 9
+测试集 digtime: loss=0.257800 accuracy=0.901600 precision=0.888800 recall=0.996800 f1=0.939700 auc=0.911300 
+测试集 timing_ctrl: loss=0.254200 accuracy=0.900500 precision=0.887800 recall=0.996700 f1=0.939100 auc=0.928500 
+测试集 array_128_32_8t: loss=0.401000 accuracy=0.820000 precision=0.878900 recall=0.888300 f1=0.883600 auc=0.869600 
+
+Epoch 10/200 - 训练: loss=0.286100 accuracy=0.885000 precision=0.876200 recall=0.990600 f1=0.929900 auc=0.899100 
+Epoch 10/200 - 验证: loss=0.277300 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.905200 
+【新的最佳模型！】Epoch 10
+测试集 digtime: loss=0.256000 accuracy=0.901600 precision=0.888800 recall=0.996800 f1=0.939700 auc=0.914800 
+测试集 timing_ctrl: loss=0.249800 accuracy=0.900500 precision=0.887800 recall=0.996700 f1=0.939100 auc=0.928100 
+测试集 array_128_32_8t: loss=0.410900 accuracy=0.820000 precision=0.878900 recall=0.888300 f1=0.883600 auc=0.869800 
+
+Epoch 11/200 - 训练: loss=0.284300 accuracy=0.886600 precision=0.878100 recall=0.990200 f1=0.930800 auc=0.900000 
+Epoch 11/200 - 验证: loss=0.276000 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.905400 
+【新的最佳模型！】Epoch 11
+测试集 digtime: loss=0.255000 accuracy=0.901600 precision=0.888800 recall=0.996800 f1=0.939700 auc=0.926000 
+测试集 timing_ctrl: loss=0.248600 accuracy=0.900500 precision=0.887800 recall=0.996700 f1=0.939100 auc=0.930500 
+测试集 array_128_32_8t: loss=0.412900 accuracy=0.820000 precision=0.878900 recall=0.888300 f1=0.883600 auc=0.870500 
+
+Epoch 12/200 - 训练: loss=0.283200 accuracy=0.886800 precision=0.878900 recall=0.989400 f1=0.930900 auc=0.900800 
+Epoch 12/200 - 验证: loss=0.275500 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.905400 
+Epoch 13/200 - 训练: loss=0.281900 accuracy=0.887800 precision=0.879500 recall=0.990000 f1=0.931500 auc=0.901100 
+Epoch 13/200 - 验证: loss=0.275800 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.905800 
+【新的最佳模型！】Epoch 13
+测试集 digtime: loss=0.258400 accuracy=0.901600 precision=0.888800 recall=0.996800 f1=0.939700 auc=0.910200 
+测试集 timing_ctrl: loss=0.251100 accuracy=0.900500 precision=0.887800 recall=0.996700 f1=0.939100 auc=0.925600 
+测试集 array_128_32_8t: loss=0.406500 accuracy=0.820000 precision=0.878900 recall=0.888300 f1=0.883600 auc=0.870100 
+
+Epoch 14/200 - 训练: loss=0.281300 accuracy=0.887900 precision=0.879700 recall=0.989800 f1=0.931500 auc=0.901400 
+Epoch 14/200 - 验证: loss=0.277100 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.906100 
+【新的最佳模型！】Epoch 14
+测试集 digtime: loss=0.253500 accuracy=0.901600 precision=0.888800 recall=0.996800 f1=0.939700 auc=0.926300 
+测试集 timing_ctrl: loss=0.244600 accuracy=0.900500 precision=0.887800 recall=0.996700 f1=0.939100 auc=0.927100 
+测试集 array_128_32_8t: loss=0.407100 accuracy=0.820000 precision=0.878900 recall=0.888300 f1=0.883600 auc=0.870500 
+
+Epoch 15/200 - 训练: loss=0.281300 accuracy=0.888100 precision=0.880000 recall=0.989700 f1=0.931600 auc=0.901200 
+Epoch 15/200 - 验证: loss=0.276600 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.905700 
+Epoch 16/200 - 训练: loss=0.280000 accuracy=0.888200 precision=0.880300 recall=0.989500 f1=0.931700 auc=0.902400 
+Epoch 16/200 - 验证: loss=0.275400 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.905600 
+Epoch 17/200 - 训练: loss=0.280000 accuracy=0.888200 precision=0.880300 recall=0.989400 f1=0.931600 auc=0.901900 
+Epoch 17/200 - 验证: loss=0.276100 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.905100 
+Epoch 18/200 - 训练: loss=0.280000 accuracy=0.888300 precision=0.880300 recall=0.989600 f1=0.931700 auc=0.902300 
+Epoch 18/200 - 验证: loss=0.275900 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.905300 
+Epoch 19/200 - 训练: loss=0.279200 accuracy=0.888300 precision=0.880400 recall=0.989400 f1=0.931800 auc=0.902400 
+Epoch 19/200 - 验证: loss=0.276400 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.905300 
+Epoch 20/200 - 训练: loss=0.278700 accuracy=0.888400 precision=0.880600 recall=0.989300 f1=0.931800 auc=0.902800 
+Epoch 20/200 - 验证: loss=0.276500 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.906100 
+Epoch 21/200 - 训练: loss=0.279400 accuracy=0.888400 precision=0.880500 recall=0.989400 f1=0.931800 auc=0.902400 
+Epoch 21/200 - 验证: loss=0.277200 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.905600 
+Epoch 22/200 - 训练: loss=0.278100 accuracy=0.888400 precision=0.880500 recall=0.989400 f1=0.931800 auc=0.903400 
+Epoch 22/200 - 验证: loss=0.275700 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.905400 
+Epoch 23/200 - 训练: loss=0.278400 accuracy=0.888900 precision=0.880800 recall=0.989700 f1=0.932100 auc=0.902800 
+Epoch 23/200 - 验证: loss=0.275800 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.905700 
+Epoch 24/200 - 训练: loss=0.278200 accuracy=0.888600 precision=0.880700 recall=0.989500 f1=0.931900 auc=0.902900 
+Epoch 24/200 - 验证: loss=0.275200 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.905300 
+Epoch 25/200 - 训练: loss=0.278200 accuracy=0.888800 precision=0.880800 recall=0.989600 f1=0.932000 auc=0.902700 
+Epoch 25/200 - 验证: loss=0.276400 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.905300 
+Epoch 26/200 - 训练: loss=0.277800 accuracy=0.888700 precision=0.880700 recall=0.989700 f1=0.932000 auc=0.902900 
+Epoch 26/200 - 验证: loss=0.275800 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.906300 
+【新的最佳模型！】Epoch 26
+测试集 digtime: loss=0.258300 accuracy=0.901600 precision=0.888800 recall=0.996800 f1=0.939700 auc=0.909700 
+测试集 timing_ctrl: loss=0.250000 accuracy=0.900500 precision=0.887800 recall=0.996700 f1=0.939100 auc=0.929200 
+测试集 array_128_32_8t: loss=0.422500 accuracy=0.820000 precision=0.878900 recall=0.888300 f1=0.883600 auc=0.871500 
+
+Epoch 27/200 - 训练: loss=0.277600 accuracy=0.889000 precision=0.881000 recall=0.989600 f1=0.932200 auc=0.903200 
+Epoch 27/200 - 验证: loss=0.275800 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.905400 
+Epoch 28/200 - 训练: loss=0.277700 accuracy=0.888900 precision=0.881000 recall=0.989500 f1=0.932100 auc=0.903000 
+Epoch 28/200 - 验证: loss=0.275300 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.905500 
+Epoch 29/200 - 训练: loss=0.277400 accuracy=0.888800 precision=0.880800 recall=0.989500 f1=0.932000 auc=0.903400 
+Epoch 29/200 - 验证: loss=0.275000 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.905700 
+Epoch 30/200 - 训练: loss=0.276900 accuracy=0.888800 precision=0.880800 recall=0.989600 f1=0.932000 auc=0.903800 
+Epoch 30/200 - 验证: loss=0.275800 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.905400 
+Epoch 31/200 - 训练: loss=0.277000 accuracy=0.889000 precision=0.881000 recall=0.989500 f1=0.932100 auc=0.903600 
+Epoch 31/200 - 验证: loss=0.276000 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.906200 
+Epoch 32/200 - 训练: loss=0.277400 accuracy=0.889000 precision=0.880900 recall=0.989600 f1=0.932100 auc=0.903300 
+Epoch 32/200 - 验证: loss=0.275600 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.903300 
+Epoch 33/200 - 训练: loss=0.277000 accuracy=0.889100 precision=0.881000 recall=0.989800 f1=0.932200 auc=0.903500 
+Epoch 33/200 - 验证: loss=0.276000 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.905300 
+Epoch 34/200 - 训练: loss=0.277000 accuracy=0.888900 precision=0.880900 recall=0.989600 f1=0.932100 auc=0.903600 
+Epoch 34/200 - 验证: loss=0.275300 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.905700 
+Epoch 35/200 - 训练: loss=0.276900 accuracy=0.889100 precision=0.881100 recall=0.989700 f1=0.932200 auc=0.903500 
+Epoch 35/200 - 验证: loss=0.275600 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.905600 
+Epoch 36/200 - 训练: loss=0.276600 accuracy=0.889200 precision=0.881000 recall=0.989800 f1=0.932200 auc=0.903600 
+Epoch 36/200 - 验证: loss=0.275700 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.906200 
+Epoch 37/200 - 训练: loss=0.276400 accuracy=0.889000 precision=0.881100 recall=0.989500 f1=0.932100 auc=0.903900 
+Epoch 37/200 - 验证: loss=0.275600 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.906100 
+Epoch 38/200 - 训练: loss=0.276500 accuracy=0.889200 precision=0.881100 recall=0.989700 f1=0.932200 auc=0.903900 
+Epoch 38/200 - 验证: loss=0.275200 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.905700 
+Epoch 39/200 - 训练: loss=0.276700 accuracy=0.889100 precision=0.881200 recall=0.989400 f1=0.932200 auc=0.903600 
+Epoch 39/200 - 验证: loss=0.275900 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.905400 
+Epoch 40/200 - 训练: loss=0.276400 accuracy=0.889000 precision=0.881100 recall=0.989500 f1=0.932100 auc=0.903800 
+Epoch 40/200 - 验证: loss=0.275400 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.906200 
+Epoch 41/200 - 训练: loss=0.276400 accuracy=0.889100 precision=0.881000 recall=0.989800 f1=0.932200 auc=0.904100 
+Epoch 41/200 - 验证: loss=0.275100 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.906400 
+【新的最佳模型！】Epoch 41
+测试集 digtime: loss=0.255000 accuracy=0.901600 precision=0.888800 recall=0.996800 f1=0.939700 auc=0.925700 
+测试集 timing_ctrl: loss=0.248400 accuracy=0.900500 precision=0.887800 recall=0.996700 f1=0.939100 auc=0.930900 
+测试集 array_128_32_8t: loss=0.416600 accuracy=0.820000 precision=0.878900 recall=0.888300 f1=0.883600 auc=0.871700 
+
+Epoch 42/200 - 训练: loss=0.276200 accuracy=0.889100 precision=0.881100 recall=0.989600 f1=0.932200 auc=0.904100 
+Epoch 42/200 - 验证: loss=0.275600 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.905900 
+Epoch 43/200 - 训练: loss=0.276400 accuracy=0.889200 precision=0.881200 recall=0.989500 f1=0.932200 auc=0.903600 
+Epoch 43/200 - 验证: loss=0.275300 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.906500 
+【新的最佳模型！】Epoch 43
+测试集 digtime: loss=0.259500 accuracy=0.901600 precision=0.888800 recall=0.996800 f1=0.939700 auc=0.927300 
+测试集 timing_ctrl: loss=0.254300 accuracy=0.900500 precision=0.887800 recall=0.996700 f1=0.939100 auc=0.931300 
+测试集 array_128_32_8t: loss=0.416800 accuracy=0.820000 precision=0.878900 recall=0.888300 f1=0.883600 auc=0.872900 
+
+Epoch 44/200 - 训练: loss=0.276300 accuracy=0.889300 precision=0.881200 recall=0.989700 f1=0.932300 auc=0.903800 
+Epoch 44/200 - 验证: loss=0.277600 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.905500 
+Epoch 45/200 - 训练: loss=0.276300 accuracy=0.889100 precision=0.881200 recall=0.989500 f1=0.932200 auc=0.903800 
+Epoch 45/200 - 验证: loss=0.275600 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.906800 
+【新的最佳模型！】Epoch 45
+测试集 digtime: loss=0.257400 accuracy=0.901600 precision=0.888800 recall=0.996800 f1=0.939700 auc=0.912100 
+测试集 timing_ctrl: loss=0.251600 accuracy=0.900500 precision=0.887800 recall=0.996700 f1=0.939100 auc=0.931600 
+测试集 array_128_32_8t: loss=0.413900 accuracy=0.820000 precision=0.878900 recall=0.888300 f1=0.883600 auc=0.875700 
+
+Epoch 46/200 - 训练: loss=0.276100 accuracy=0.889200 precision=0.881200 recall=0.989600 f1=0.932200 auc=0.904100 
+Epoch 46/200 - 验证: loss=0.275400 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.905700 
+Epoch 47/200 - 训练: loss=0.276100 accuracy=0.889300 precision=0.881200 recall=0.989700 f1=0.932300 auc=0.903900 
+Epoch 47/200 - 验证: loss=0.275900 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.906200 
+Epoch 48/200 - 训练: loss=0.276700 accuracy=0.889200 precision=0.881200 recall=0.989600 f1=0.932200 auc=0.903500 
+Epoch 48/200 - 验证: loss=0.275700 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.905200 
+Epoch 49/200 - 训练: loss=0.275800 accuracy=0.889200 precision=0.881200 recall=0.989600 f1=0.932300 auc=0.904200 
+Epoch 49/200 - 验证: loss=0.275400 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.906000 
+Epoch 50/200 - 训练: loss=0.276300 accuracy=0.889100 precision=0.881200 recall=0.989500 f1=0.932200 auc=0.903800 
+Epoch 50/200 - 验证: loss=0.275600 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.906100 
+Epoch 51/200 - 训练: loss=0.276100 accuracy=0.889100 precision=0.881200 recall=0.989500 f1=0.932200 auc=0.904300 
+Epoch 51/200 - 验证: loss=0.275800 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.908100 
+【新的最佳模型！】Epoch 51
+测试集 digtime: loss=0.256400 accuracy=0.901600 precision=0.888800 recall=0.996800 f1=0.939700 auc=0.926400 
+测试集 timing_ctrl: loss=0.250000 accuracy=0.900500 precision=0.887800 recall=0.996700 f1=0.939100 auc=0.932900 
+测试集 array_128_32_8t: loss=0.411500 accuracy=0.820000 precision=0.878900 recall=0.888300 f1=0.883600 auc=0.872900 
+
+Epoch 52/200 - 训练: loss=0.276100 accuracy=0.889200 precision=0.881200 recall=0.989600 f1=0.932300 auc=0.904100 
+Epoch 52/200 - 验证: loss=0.275400 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.905500 
+Epoch 53/200 - 训练: loss=0.275700 accuracy=0.889200 precision=0.881200 recall=0.989600 f1=0.932300 auc=0.904100 
+Epoch 53/200 - 验证: loss=0.275300 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.906400 
+Epoch 54/200 - 训练: loss=0.276100 accuracy=0.889100 precision=0.881200 recall=0.989400 f1=0.932200 auc=0.903900 
+Epoch 54/200 - 验证: loss=0.275900 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.906200 
+Epoch 55/200 - 训练: loss=0.275800 accuracy=0.889100 precision=0.881100 recall=0.989600 f1=0.932200 auc=0.904200 
+Epoch 55/200 - 验证: loss=0.275300 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.906200 
+Epoch 56/200 - 训练: loss=0.276000 accuracy=0.889300 precision=0.881200 recall=0.989700 f1=0.932300 auc=0.904000 
+Epoch 56/200 - 验证: loss=0.275500 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.906200 
+Epoch 57/200 - 训练: loss=0.276200 accuracy=0.889200 precision=0.881100 recall=0.989700 f1=0.932200 auc=0.903900 
+Epoch 57/200 - 验证: loss=0.275100 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.907600 
+Epoch 58/200 - 训练: loss=0.275700 accuracy=0.889300 precision=0.881200 recall=0.989700 f1=0.932300 auc=0.904100 
+Epoch 58/200 - 验证: loss=0.275000 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.906100 
+Epoch 59/200 - 训练: loss=0.276000 accuracy=0.889300 precision=0.881300 recall=0.989700 f1=0.932300 auc=0.903900 
+Epoch 59/200 - 验证: loss=0.275400 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.905700 
+Epoch 60/200 - 训练: loss=0.275800 accuracy=0.889200 precision=0.881200 recall=0.989700 f1=0.932300 auc=0.904200 
+Epoch 60/200 - 验证: loss=0.276400 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.906300 
+Epoch 61/200 - 训练: loss=0.276000 accuracy=0.889300 precision=0.881300 recall=0.989600 f1=0.932300 auc=0.904000 
+Epoch 61/200 - 验证: loss=0.275500 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.906100 
+Epoch 62/200 - 训练: loss=0.275800 accuracy=0.889200 precision=0.881200 recall=0.989600 f1=0.932300 auc=0.904200 
+Epoch 62/200 - 验证: loss=0.275300 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.906400 
+Epoch 63/200 - 训练: loss=0.275800 accuracy=0.889300 precision=0.881300 recall=0.989600 f1=0.932300 auc=0.904300 
+Epoch 63/200 - 验证: loss=0.275200 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.905600 
+Epoch 64/200 - 训练: loss=0.275800 accuracy=0.889300 precision=0.881300 recall=0.989600 f1=0.932300 auc=0.904000 
+Epoch 64/200 - 验证: loss=0.275700 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.905800 
+Epoch 65/200 - 训练: loss=0.275500 accuracy=0.889200 precision=0.881300 recall=0.989500 f1=0.932300 auc=0.904300 
+Epoch 65/200 - 验证: loss=0.275100 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.906100 
+Epoch 66/200 - 训练: loss=0.275400 accuracy=0.889200 precision=0.881100 recall=0.989700 f1=0.932200 auc=0.904600 
+Epoch 66/200 - 验证: loss=0.275000 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.906400 
+Epoch 67/200 - 训练: loss=0.275700 accuracy=0.889200 precision=0.881200 recall=0.989600 f1=0.932200 auc=0.904300 
+Epoch 67/200 - 验证: loss=0.275100 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.906400 
+Epoch 68/200 - 训练: loss=0.276000 accuracy=0.889200 precision=0.881300 recall=0.989500 f1=0.932300 auc=0.904100 
+Epoch 68/200 - 验证: loss=0.275400 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.906400 
+Epoch 69/200 - 训练: loss=0.275600 accuracy=0.889400 precision=0.881300 recall=0.989700 f1=0.932400 auc=0.904300 
+Epoch 69/200 - 验证: loss=0.275500 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.905700 
+Epoch 70/200 - 训练: loss=0.275700 accuracy=0.889200 precision=0.881200 recall=0.989500 f1=0.932200 auc=0.904300 
+Epoch 70/200 - 验证: loss=0.275200 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.906000 
+Epoch 71/200 - 训练: loss=0.275600 accuracy=0.889300 precision=0.881300 recall=0.989600 f1=0.932300 auc=0.904100 
+Epoch 71/200 - 验证: loss=0.275800 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.903400 
+Epoch 72/200 - 训练: loss=0.275700 accuracy=0.889400 precision=0.881300 recall=0.989600 f1=0.932300 auc=0.904000 
+Epoch 72/200 - 验证: loss=0.275700 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.905700 
+Epoch 73/200 - 训练: loss=0.275700 accuracy=0.889300 precision=0.881300 recall=0.989600 f1=0.932300 auc=0.904100 
+Epoch 73/200 - 验证: loss=0.275600 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.906300 
+Epoch 74/200 - 训练: loss=0.275600 accuracy=0.889300 precision=0.881200 recall=0.989700 f1=0.932300 auc=0.904500 
+Epoch 74/200 - 验证: loss=0.275100 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.906100 
+Epoch 75/200 - 训练: loss=0.275600 accuracy=0.889300 precision=0.881200 recall=0.989700 f1=0.932300 auc=0.904200 
+Epoch 75/200 - 验证: loss=0.275500 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.905600 
+Epoch 76/200 - 训练: loss=0.275400 accuracy=0.889200 precision=0.881200 recall=0.989600 f1=0.932200 auc=0.904200 
+Epoch 76/200 - 验证: loss=0.275500 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.905300 
+Epoch 77/200 - 训练: loss=0.275100 accuracy=0.889300 precision=0.881300 recall=0.989600 f1=0.932300 auc=0.904600 
+Epoch 77/200 - 验证: loss=0.276200 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.905700 
+Epoch 78/200 - 训练: loss=0.275600 accuracy=0.889300 precision=0.881200 recall=0.989700 f1=0.932300 auc=0.904100 
+Epoch 78/200 - 验证: loss=0.275400 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.906300 
+Epoch 79/200 - 训练: loss=0.275300 accuracy=0.889400 precision=0.881300 recall=0.989700 f1=0.932300 auc=0.904500 
+Epoch 79/200 - 验证: loss=0.275700 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.906000 
+Epoch 80/200 - 训练: loss=0.275700 accuracy=0.889300 precision=0.881300 recall=0.989600 f1=0.932300 auc=0.904100 
+Epoch 80/200 - 验证: loss=0.274900 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.905200 
+Epoch 81/200 - 训练: loss=0.275600 accuracy=0.889400 precision=0.881400 recall=0.989700 f1=0.932400 auc=0.904100 
+Epoch 81/200 - 验证: loss=0.274900 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.906400 
+Epoch 82/200 - 训练: loss=0.275100 accuracy=0.889400 precision=0.881400 recall=0.989600 f1=0.932400 auc=0.904400 
+Epoch 82/200 - 验证: loss=0.275200 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.906200 
+Epoch 83/200 - 训练: loss=0.275300 accuracy=0.889200 precision=0.881300 recall=0.989500 f1=0.932200 auc=0.904700 
+Epoch 83/200 - 验证: loss=0.275200 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.906200 
+Epoch 84/200 - 训练: loss=0.275500 accuracy=0.889300 precision=0.881300 recall=0.989600 f1=0.932300 auc=0.904400 
+Epoch 84/200 - 验证: loss=0.275100 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.906300 
+Epoch 85/200 - 训练: loss=0.275200 accuracy=0.889400 precision=0.881400 recall=0.989600 f1=0.932400 auc=0.904700 
+Epoch 85/200 - 验证: loss=0.275000 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.906000 
+Epoch 86/200 - 训练: loss=0.275300 accuracy=0.889300 precision=0.881300 recall=0.989500 f1=0.932300 auc=0.904400 
+Epoch 86/200 - 验证: loss=0.274800 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.906300 
+Epoch 87/200 - 训练: loss=0.275200 accuracy=0.889300 precision=0.881300 recall=0.989600 f1=0.932300 auc=0.904400 
+Epoch 87/200 - 验证: loss=0.275000 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.906400 
+Epoch 88/200 - 训练: loss=0.275600 accuracy=0.889300 precision=0.881300 recall=0.989600 f1=0.932300 auc=0.904200 
+Epoch 88/200 - 验证: loss=0.274900 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.906500 
+Epoch 89/200 - 训练: loss=0.275200 accuracy=0.889300 precision=0.881400 recall=0.989500 f1=0.932300 auc=0.904500 
+Epoch 89/200 - 验证: loss=0.275300 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.906000 
+Epoch 90/200 - 训练: loss=0.275500 accuracy=0.889300 precision=0.881300 recall=0.989600 f1=0.932300 auc=0.904200 
+Epoch 90/200 - 验证: loss=0.275000 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.907400 
+Epoch 91/200 - 训练: loss=0.275400 accuracy=0.889300 precision=0.881300 recall=0.989600 f1=0.932300 auc=0.904500 
+Epoch 91/200 - 验证: loss=0.275600 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.906400 
+Epoch 92/200 - 训练: loss=0.275500 accuracy=0.889300 precision=0.881300 recall=0.989600 f1=0.932300 auc=0.904100 
+Epoch 92/200 - 验证: loss=0.275700 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.906500 
+Epoch 93/200 - 训练: loss=0.275400 accuracy=0.889500 precision=0.881300 recall=0.989800 f1=0.932400 auc=0.904500 
+Epoch 93/200 - 验证: loss=0.275700 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.906300 
+Epoch 94/200 - 训练: loss=0.274800 accuracy=0.889100 precision=0.881300 recall=0.989300 f1=0.932200 auc=0.904900 
+Epoch 94/200 - 验证: loss=0.275400 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.906400 
+Epoch 95/200 - 训练: loss=0.274800 accuracy=0.889400 precision=0.881300 recall=0.989600 f1=0.932300 auc=0.904700 
+Epoch 95/200 - 验证: loss=0.275900 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.907100 
+Epoch 96/200 - 训练: loss=0.275100 accuracy=0.889400 precision=0.881300 recall=0.989700 f1=0.932400 auc=0.904500 
+Epoch 96/200 - 验证: loss=0.275400 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.906200 
+Epoch 97/200 - 训练: loss=0.275200 accuracy=0.889400 precision=0.881400 recall=0.989600 f1=0.932400 auc=0.904300 
+Epoch 97/200 - 验证: loss=0.275000 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.906400 
+Epoch 98/200 - 训练: loss=0.274800 accuracy=0.889300 precision=0.881300 recall=0.989600 f1=0.932300 auc=0.904700 
+Epoch 98/200 - 验证: loss=0.275000 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.906300 
+Epoch 99/200 - 训练: loss=0.275200 accuracy=0.889300 precision=0.881300 recall=0.989600 f1=0.932300 auc=0.904300 
+Epoch 99/200 - 验证: loss=0.275200 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.906300 
+Epoch 100/200 - 训练: loss=0.275100 accuracy=0.889300 precision=0.881300 recall=0.989600 f1=0.932300 auc=0.904300 
+Epoch 100/200 - 验证: loss=0.274900 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.907400 
+Epoch 101/200 - 训练: loss=0.275100 accuracy=0.889400 precision=0.881300 recall=0.989700 f1=0.932400 auc=0.904600 
+Epoch 101/200 - 验证: loss=0.275900 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.905800 
+Epoch 102/200 - 训练: loss=0.275000 accuracy=0.889300 precision=0.881300 recall=0.989700 f1=0.932300 auc=0.904700 
+Epoch 102/200 - 验证: loss=0.274900 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.908800 
+【新的最佳模型！】Epoch 102
+测试集 digtime: loss=0.254600 accuracy=0.901600 precision=0.888800 recall=0.996800 f1=0.939700 auc=0.927700 
+测试集 timing_ctrl: loss=0.250100 accuracy=0.900500 precision=0.887800 recall=0.996700 f1=0.939100 auc=0.931000 
+测试集 array_128_32_8t: loss=0.419700 accuracy=0.820000 precision=0.878900 recall=0.888300 f1=0.883600 auc=0.867500 
+
+Epoch 103/200 - 训练: loss=0.275300 accuracy=0.889400 precision=0.881300 recall=0.989700 f1=0.932300 auc=0.904200 
+Epoch 103/200 - 验证: loss=0.275100 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.905400 
+Epoch 104/200 - 训练: loss=0.275000 accuracy=0.889400 precision=0.881300 recall=0.989600 f1=0.932400 auc=0.904700 
+Epoch 104/200 - 验证: loss=0.274700 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.906300 
+Epoch 105/200 - 训练: loss=0.275200 accuracy=0.889300 precision=0.881200 recall=0.989600 f1=0.932300 auc=0.904400 
+Epoch 105/200 - 验证: loss=0.275100 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.905400 
+Epoch 106/200 - 训练: loss=0.275100 accuracy=0.889400 precision=0.881300 recall=0.989800 f1=0.932400 auc=0.904400 
+Epoch 106/200 - 验证: loss=0.275600 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.906400 
+Epoch 107/200 - 训练: loss=0.274900 accuracy=0.889400 precision=0.881400 recall=0.989600 f1=0.932400 auc=0.904700 
+Epoch 107/200 - 验证: loss=0.274900 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.906700 
+Epoch 108/200 - 训练: loss=0.275100 accuracy=0.889400 precision=0.881300 recall=0.989800 f1=0.932400 auc=0.904600 
+Epoch 108/200 - 验证: loss=0.275700 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.905600 
+Epoch 109/200 - 训练: loss=0.275000 accuracy=0.889400 precision=0.881300 recall=0.989700 f1=0.932400 auc=0.904700 
+Epoch 109/200 - 验证: loss=0.274800 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.905700 
+Epoch 110/200 - 训练: loss=0.274900 accuracy=0.889400 precision=0.881300 recall=0.989700 f1=0.932300 auc=0.904800 
+Epoch 110/200 - 验证: loss=0.275400 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.905500 
+Epoch 111/200 - 训练: loss=0.274700 accuracy=0.889400 precision=0.881400 recall=0.989700 f1=0.932400 auc=0.904700 
+Epoch 111/200 - 验证: loss=0.275100 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.906100 
+Epoch 112/200 - 训练: loss=0.274600 accuracy=0.889300 precision=0.881100 recall=0.989800 f1=0.932300 auc=0.905000 
+Epoch 112/200 - 验证: loss=0.275400 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.905500 
+Epoch 113/200 - 训练: loss=0.274300 accuracy=0.889300 precision=0.881000 recall=0.990000 f1=0.932300 auc=0.905200 
+Epoch 113/200 - 验证: loss=0.275900 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.906600 
+Epoch 114/200 - 训练: loss=0.273700 accuracy=0.889600 precision=0.880800 recall=0.990800 f1=0.932500 auc=0.906000 
+Epoch 114/200 - 验证: loss=0.275900 accuracy=0.888700 precision=0.879000 recall=0.990800 f1=0.931600 auc=0.907200 

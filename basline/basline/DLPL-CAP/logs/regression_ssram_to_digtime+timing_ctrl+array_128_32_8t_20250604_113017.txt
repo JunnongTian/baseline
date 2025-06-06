@@ -1,0 +1,71 @@
+============= PID = 3531369 ============= 
+Log file created at: ./logs/regression_ssram_to_digtime+timing_ctrl+array_128_32_8t_20250604_113017.txt
+Parameters:
+  seed: 42
+  train_dataset: ssram
+  test_dataset: digtime+timing_ctrl+array_128_32_8t
+  task: regression
+  max_dist: 350
+  num_workers: 4
+  gpu: 1
+  epochs: 200
+  batch_size: 32
+  lr: 5e-05
+  num_gnn_layers: 4
+  num_head_layers: 2
+  hid_dim: 32
+  dropout: 0.3
+  use_bn: 0
+  act_fn: relu
+  src_dst_agg: concat
+  num_hops: 4
+  to_undirected: 1
+  use_stats: 1
+  log_dir: ./logs
+  use_focal_loss: 0
+  train_sample_rate: 0.1
+  test_sample_rate: 1.0
+  use_amp: 1
+Namespace(seed=42, train_dataset='ssram', test_dataset='digtime+timing_ctrl+array_128_32_8t', task='regression', max_dist=350, num_workers=4, gpu=1, epochs=200, batch_size=32, lr=5e-05, num_gnn_layers=4, num_head_layers=2, hid_dim=32, dropout=0.3, use_bn=0, act_fn='relu', src_dst_agg='concat', num_hops=4, to_undirected=1, use_stats=1, log_dir='./logs', use_focal_loss=0, train_sample_rate=0.1, test_sample_rate=1.0, use_amp=1)
+SealSramDataset includes ['ssram'] circuits
+load processed ssram, len(data_list)=17541, data_offset=0 
+PID = 3531369
+Building dataset ssram took 00:00:00.03
+Dataloader: Loading success.
+SealSramDataset includes ['digtime', 'timing_ctrl', 'array_128_32_8t'] circuits
+load processed digtime, len(data_list)=2814, data_offset=0 
+load processed timing_ctrl, len(data_list)=3333, data_offset=1 
+load processed array_128_32_8t, len(data_list)=73569, data_offset=2 
+PID = 3531369
+Building dataset digtime+timing_ctrl+array_128_32_8t took 00:00:00.46
+Dataloader: Loading success.
+====== Train ssram to Test digtime+timing_ctrl+array_128_32_8t ======
+normalizing node_attr 0: tensor([[8.0000e+02, 5.1200e+02, 8.2400e+02, 7.9200e+02, 4.4080e-04, 1.5360e-05,
+         1.0000e+00, 1.0000e+00, 1.0000e+00, 1.0000e+00, 1.0000e+00, 1.0000e+00,
+         1.0000e+00, 1.0000e+00, 1.0000e+00, 1.0000e+00, 1.0000e+00]]) ...
+normalizing node_attr 1: tensor([[1.0000e+00, 2.7000e-06, 3.0000e-07, 2.0265e-13, 5.5933e-06, 1.0000e+00,
+         1.0000e+00, 1.0000e+00, 1.0000e+00, 1.0000e+00, 1.0000e+00, 1.0000e+00,
+         1.0000e+00, 1.0000e+00, 4.0000e+00, 2.0000e+00, 1.0000e+00]]) ...
+normalizing node_attr 0: tensor([[5.1200e+02, 7.2000e+01, 5.1200e+02, 1.0000e+00, 6.1440e-05, 2.2400e-06,
+         1.0000e+00, 1.0000e+00, 1.0000e+00, 1.0000e+00, 1.0000e+00, 1.0000e+00,
+         1.0000e+00, 1.0000e+00, 1.0000e+00, 1.0000e+00, 1.0000e+00]]) ...
+normalizing node_attr 1: tensor([[1.0000e+00, 2.4000e-06, 5.0000e-08, 1.8032e-13, 4.9933e-06, 1.0000e+00,
+         1.0000e+00, 1.0000e+00, 1.0000e+00, 1.0000e+00, 1.0000e+00, 1.0000e+00,
+         1.0000e+00, 1.0000e+00, 4.0000e+00, 2.0000e+00, 1.0000e+00]]) ...
+调用dataset_sampling处理数据集...
+数据加载器创建完成: 1个训练，1个验证，3个测试
+
+===== Epoch 1/200 - Elapsed: 21.07s =====
+train  | loss: 0.210563 | mae: 0.413709 | mse: 0.210563 | rmse: 0.210563 | r2: -8.585657
+分类结果:
+train  | loss: 0.845502 | accuracy: 0.760975 | precision: 0.761854 | recall: 0.998222 | f1: 0.864167 | auc: 0.500457
+
+----- VAL 评估 - 用时: 2.49s -----
+val    | loss: 0.133511 | mae: 0.338961 | mse: 0.133511 | rmse: 0.133511 | r2: -5.283800
+分类结果:
+val    | loss: 0.564058 | accuracy: 0.758906 | precision: 0.758906 | recall: 1.000000 | f1: 0.862929 | auc: 0.500000
+
+----- TEST_DIGTIME 评估 - 用时: 2.51s -----
+test_digtime | loss: 0.126568 | mae: 0.328201 | mse: 0.126568 | rmse: 0.126568 | r2: -4.834345
+分类结果:
+test_digtime | loss: 0.574801 | accuracy: 0.753731 | precision: 0.753731 | recall: 1.000000 | f1: 0.859574 | auc: 0.500000

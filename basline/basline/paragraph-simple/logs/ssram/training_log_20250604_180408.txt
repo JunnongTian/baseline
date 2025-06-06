@@ -1,0 +1,11 @@
+Paragraph-Simple 训练日志
+数据集: ssram
+训练参数: {'train_dataset': 'ssram', 'test_dataset': 'digtime+timing_ctrl+array_128_32_8t', 'task': 'regression', 'max_dist': 350, 'lr': 5e-05, 'num_gnn_layers': 4, 'num_head_layers': 2, 'hid_dim': 64, 'dropout': 0.0, 'use_bn': 0, 'act_fn': 'relu', 'src_dst_agg': 'concat', 'num_hops': 4, 'to_undirected': 1, 'train_sample_rate': 0.1, 'test_sample_rate': 1.0, 'use_ensemble': 0, 'num_ensemble': 3, 'ensemble_thresholds': '0.33,0.66'}
+
+Epoch 1/200 - 训练: loss=0.012400 mae=0.081000 mse=0.012400 rmse=0.012400 r2=0.433800 
+Epoch 1/200 - 验证: loss=0.012200 mae=0.077500 mse=0.012200 rmse=0.012200 r2=0.423800 
+【新的最佳模型！】Epoch 1
+测试集 digtime: loss=0.027300 mae=0.121200 mse=0.027300 rmse=0.027300 r2=-0.259000 
+测试集 timing_ctrl: loss=0.021400 mae=0.114300 mse=0.021400 rmse=0.021400 r2=0.322700 
+测试集 array_128_32_8t: loss=0.012000 mae=0.076100 mse=0.012000 rmse=0.012000 r2=0.405800 
+

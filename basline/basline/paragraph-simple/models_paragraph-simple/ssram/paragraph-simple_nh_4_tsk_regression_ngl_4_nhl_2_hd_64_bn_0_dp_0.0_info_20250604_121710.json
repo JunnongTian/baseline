@@ -1,0 +1,34 @@
+{
+    "model_name": "paragraph-simple",
+    "dataset_name": "ssram",
+    "epoch": 122,
+    "timestamp": "20250604_121710",
+    "params": {
+        "train_dataset": "ssram",
+        "test_dataset": "digtime+timing_ctrl+array_128_32_8t",
+        "task": "regression",
+        "max_dist": 350,
+        "lr": 5e-05,
+        "num_gnn_layers": 4,
+        "num_head_layers": 2,
+        "hid_dim": 64,
+        "dropout": 0.0,
+        "use_bn": 0,
+        "act_fn": "relu",
+        "src_dst_agg": "concat",
+        "num_hops": 4,
+        "to_undirected": 1,
+        "train_sample_rate": 0.1,
+        "test_sample_rate": 1.0,
+        "use_ensemble": 0,
+        "num_ensemble": 3,
+        "ensemble_thresholds": "0.33,0.66"
+    },
+    "metrics": {
+        "train_loss": 0.0125,
+        "val_loss": 0.0118,
+        "train_r2": 0.431,
+        "val_r2": 0.4453
+    },
+    "is_best": false
+}

@@ -1,0 +1,109 @@
+============= PID = 1446785 ============= 
+Log file created at: ./logs_test/classification_ssram_to_digtime+timing_ctrl+array_128_32_8t_1_concat_relu_0.3.txt
+Parameters:
+  seed: 42
+  train_dataset: ssram
+  test_dataset: digtime+timing_ctrl+array_128_32_8t
+  task: classification
+  max_dist: 350
+  num_workers: 4
+  gpu: 1
+  epochs: 200
+  batch_size: 32
+  lr: 5e-05
+  num_gnn_layers: 4
+  num_head_layers: 2
+  hid_dim: 32
+  dropout: 0.3
+  use_bn: 1
+  act_fn: relu
+  src_dst_agg: concat
+  num_hops: 4
+  to_undirected: 1
+  use_stats: 1
+  log_dir: ./logs_test
+  use_focal_loss: 0
+  train_sample_rate: 1.0
+  test_sample_rate: 1.0
+  use_amp: 1
+Namespace(seed=42, train_dataset='ssram', test_dataset='digtime+timing_ctrl+array_128_32_8t', task='classification', max_dist=350, num_workers=4, gpu=1, epochs=200, batch_size=32, lr=5e-05, num_gnn_layers=4, num_head_layers=2, hid_dim=32, dropout=0.3, use_bn=1, act_fn='relu', src_dst_agg='concat', num_hops=4, to_undirected=1, use_stats=1, log_dir='./logs_test', use_focal_loss=0, train_sample_rate=1.0, test_sample_rate=1.0, use_amp=1)
+SealSramDataset includes ['ssram'] circuits
+load processed ssram, len(data_list)=228036, data_offset=0 
+PID = 1446785
+Building dataset ssram took 00:00:00.05
+Dataloader: Loading success.
+SealSramDataset includes ['digtime', 'timing_ctrl', 'array_128_32_8t'] circuits
+load processed digtime, len(data_list)=3657, data_offset=0 
+load processed timing_ctrl, len(data_list)=4332, data_offset=1 
+load processed array_128_32_8t, len(data_list)=95637, data_offset=2 
+PID = 1446785
+Building dataset digtime+timing_ctrl+array_128_32_8t took 00:00:00.09
+Dataloader: Loading success.
+====== Train ssram to Test digtime+timing_ctrl+array_128_32_8t ======
+调用dataset_sampling处理数据集...
+数据加载器创建完成: 1个训练，1个验证，3个测试
+Adjusting num_classes to 3
+
+===== Epoch 1/200 - Elapsed: 157.83s =====
+train  | loss: 0.510675 | accuracy: 0.665649 | precision: 0.816788 | recall: 0.729622 | f1: 0.770748 | auc: 0.670021
+
+----- VAL 评估 - 用时: 18.47s -----
+val    | loss: 0.607074 | accuracy: 0.764866 | precision: 0.764866 | recall: 1.000000 | f1: 0.866769 | auc: 0.756490
+
+----- TEST_DIGTIME 评估 - 用时: 2.05s -----
+test_digtime | loss: 0.604998 | accuracy: 0.769483 | precision: 0.769483 | recall: 1.000000 | f1: 0.869726 | auc: 0.777260
+
+----- TEST_TIMING_CTRL 评估 - 用时: 2.06s -----
+test_timing_ctrl | loss: 0.604977 | accuracy: 0.769391 | precision: 0.769391 | recall: 1.000000 | f1: 0.869667 | auc: 0.865078
+
+----- TEST_ARRAY_128_32_8T 评估 - 用时: 42.62s -----
+test_array_128_32_8t | loss: 0.605362 | accuracy: 0.769252 | precision: 0.769252 | recall: 1.000000 | f1: 0.869579 | auc: 0.746487
+==================================================
+
+===== Epoch 2/200 - Elapsed: 164.16s =====
+train  | loss: 0.398253 | accuracy: 0.794840 | precision: 0.879436 | recall: 0.850230 | f1: 0.864587 | auc: 0.838054
+
+----- VAL 评估 - 用时: 19.05s -----
+val    | loss: 0.575975 | accuracy: 0.764866 | precision: 0.764866 | recall: 1.000000 | f1: 0.866769 | auc: 0.828214
+
+----- TEST_DIGTIME 评估 - 用时: 2.11s -----
+test_digtime | loss: 0.574158 | accuracy: 0.769483 | precision: 0.769483 | recall: 1.000000 | f1: 0.869726 | auc: 0.835935
+
+----- TEST_TIMING_CTRL 评估 - 用时: 2.11s -----
+test_timing_ctrl | loss: 0.576251 | accuracy: 0.769391 | precision: 0.769391 | recall: 1.000000 | f1: 0.869667 | auc: 0.819055
+
+----- TEST_ARRAY_128_32_8T 评估 - 用时: 41.84s -----
+test_array_128_32_8t | loss: 0.574501 | accuracy: 0.769252 | precision: 0.769252 | recall: 1.000000 | f1: 0.869579 | auc: 0.774964
+==================================================
+
+===== Epoch 3/200 - Elapsed: 163.56s =====
+train  | loss: 0.354451 | accuracy: 0.833348 | precision: 0.884417 | recall: 0.901472 | f1: 0.892863 | auc: 0.870009
+
+----- VAL 评估 - 用时: 18.48s -----
+val    | loss: 0.547523 | accuracy: 0.764866 | precision: 0.764866 | recall: 1.000000 | f1: 0.866769 | auc: 0.856528
+
+----- TEST_DIGTIME 评估 - 用时: 2.20s -----
+test_digtime | loss: 0.543346 | accuracy: 0.769483 | precision: 0.769483 | recall: 1.000000 | f1: 0.869726 | auc: 0.871429
+
+----- TEST_TIMING_CTRL 评估 - 用时: 2.07s -----
+test_timing_ctrl | loss: 0.544885 | accuracy: 0.769391 | precision: 0.769391 | recall: 1.000000 | f1: 0.869667 | auc: 0.846663
+
+----- TEST_ARRAY_128_32_8T 评估 - 用时: 41.54s -----
+test_array_128_32_8t | loss: 0.544364 | accuracy: 0.769252 | precision: 0.769252 | recall: 1.000000 | f1: 0.869579 | auc: 0.800934
+==================================================
+
+===== Epoch 4/200 - Elapsed: 164.48s =====
+train  | loss: 0.335310 | accuracy: 0.848417 | precision: 0.883801 | recall: 0.924813 | f1: 0.903842 | auc: 0.880321
+
+----- VAL 评估 - 用时: 18.48s -----
+val    | loss: 0.540986 | accuracy: 0.764866 | precision: 0.764866 | recall: 1.000000 | f1: 0.866769 | auc: 0.869108
+
+----- TEST_DIGTIME 评估 - 用时: 2.22s -----
+test_digtime | loss: 0.539405 | accuracy: 0.769483 | precision: 0.769483 | recall: 1.000000 | f1: 0.869726 | auc: 0.829007
+
+----- TEST_TIMING_CTRL 评估 - 用时: 2.22s -----
+test_timing_ctrl | loss: 0.538284 | accuracy: 0.769391 | precision: 0.769391 | recall: 1.000000 | f1: 0.869667 | auc: 0.875472
+
+----- TEST_ARRAY_128_32_8T 评估 - 用时: 42.15s -----
+test_array_128_32_8t | loss: 0.537533 | accuracy: 0.769252 | precision: 0.769252 | recall: 1.000000 | f1: 0.869579 | auc: 0.851585
+==================================================

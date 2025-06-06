@@ -1,0 +1,228 @@
+============= PID = 3521899 ============= 
+Log file created at: ./logs/regression_sandwich+ultra8t_to_ssram+digtime+timing_ctrl+array_128_32_8t_20250515_213118.txt
+Parameters:
+  seed: 42
+  train_dataset: sandwich+ultra8t
+  test_dataset: ssram+digtime+timing_ctrl+array_128_32_8t
+  task: regression
+  max_dist: 350
+  num_workers: 4
+  gpu: 1
+  epochs: 200
+  batch_size: 32
+  lr: 5e-05
+  num_gnn_layers: 4
+  num_head_layers: 2
+  hid_dim: 32
+  dropout: 0.3
+  use_bn: 0
+  act_fn: relu
+  src_dst_agg: concat
+  num_hops: 4
+  to_undirected: 1
+  use_stats: 1
+  log_dir: ./logs
+  use_focal_loss: 0
+  train_sample_rate: 0.1
+  test_sample_rate: 1.0
+  use_amp: 1
+Namespace(seed=42, train_dataset='sandwich+ultra8t', test_dataset='ssram+digtime+timing_ctrl+array_128_32_8t', task='regression', max_dist=350, num_workers=4, gpu=1, epochs=200, batch_size=32, lr=5e-05, num_gnn_layers=4, num_head_layers=2, hid_dim=32, dropout=0.3, use_bn=0, act_fn='relu', src_dst_agg='concat', num_hops=4, to_undirected=1, use_stats=1, log_dir='./logs', use_focal_loss=0, train_sample_rate=0.1, test_sample_rate=1.0, use_amp=1)
+SealSramDataset includes ['sandwich', 'ultra8t'] circuits
+HeteroData(
+  net={
+    x=[1154629, 17],
+    y=[1154629, 1],
+  },
+  device={ x=[2650194, 16] },
+  pin={
+    x=[7943610, 1],
+    y=[7943610, 1],
+  },
+  (device, device-pin, pin)={ edge_index=[2, 7943610] },
+  (pin, pin-net, net)={ edge_index=[2, 6235905] },
+  (pin, cc_p2n, net)={
+    edge_index=[2, 12659824],
+    y=[12659824],
+  },
+  (pin, cc_p2p, pin)={
+    edge_index=[2, 16261424],
+    y=[16261424],
+  },
+  (net, cc_n2n, net)={
+    edge_index=[2, 2333996],
+    y=[2333996],
+  }
+)
+Using structured negtive sampling for target etype 0, pos=12596149, #neg=3778844
+Using structured negtive sampling for target etype 1, pos=16151035, #neg=4845310
+Using structured negtive sampling for target etype 2, pos=2326964, #neg=698089
+HeteroData(
+  net={
+    x=[861841, 17],
+    y=[861841, 1],
+  },
+  device={ x=[2325092, 16] },
+  pin={
+    x=[6971151, 1],
+    y=[6971151, 1],
+  },
+  (device, device-pin, pin)={ edge_index=[2, 6971151] },
+  (pin, pin-net, net)={ edge_index=[2, 5491341] },
+  (pin, cc_p2n, net)={
+    edge_index=[2, 12142638],
+    y=[12142638],
+  },
+  (pin, cc_p2p, pin)={
+    edge_index=[2, 14215852],
+    y=[14215852],
+  },
+  (net, cc_n2n, net)={
+    edge_index=[2, 1867949],
+    y=[1867949],
+  }
+)
+Using structured negtive sampling for target etype 0, pos=12107231, #neg=3632169
+Using structured negtive sampling for target etype 1, pos=14169479, #neg=4250843
+Using structured negtive sampling for target etype 2, pos=1852520, #neg=555756
+load processed sandwich, len(data_list)=698088, data_offset=0 
+load processed ultra8t, len(data_list)=555756, data_offset=1 
+PID = 3521899
+Building dataset sandwich+ultra8t took 00:01:06.17
+Dataloader: Loading success.
+SealSramDataset includes ['ssram', 'digtime', 'timing_ctrl', 'array_128_32_8t'] circuits
+HeteroData(
+  net={
+    x=[19902, 17],
+    y=[19902, 1],
+  },
+  device={ x=[57417, 16] },
+  pin={
+    x=[172251, 1],
+    y=[172251, 1],
+  },
+  (device, device-pin, pin)={ edge_index=[2, 172251] },
+  (pin, pin-net, net)={ edge_index=[2, 134134] },
+  (pin, cc_p2n, net)={
+    edge_index=[2, 277772],
+    y=[277772],
+  },
+  (pin, cc_p2p, pin)={
+    edge_index=[2, 288604],
+    y=[288604],
+  },
+  (net, cc_n2n, net)={
+    edge_index=[2, 58489],
+    y=[58489],
+  }
+)
+Using structured negtive sampling for target etype 0, pos=277386, #neg=83215
+Using structured negtive sampling for target etype 1, pos=288411, #neg=86523
+Using structured negtive sampling for target etype 2, pos=58471, #neg=17541
+HeteroData(
+  net={
+    x=[1046, 17],
+    y=[1046, 1],
+  },
+  device={ x=[4133, 16] },
+  pin={
+    x=[12399, 1],
+    y=[12399, 1],
+  },
+  (device, device-pin, pin)={ edge_index=[2, 12399] },
+  (pin, pin-net, net)={ edge_index=[2, 5772] },
+  (pin, cc_p2n, net)={
+    edge_index=[2, 10432],
+    y=[10432],
+  },
+  (pin, cc_p2p, pin)={
+    edge_index=[2, 22259],
+    y=[22259],
+  },
+  (net, cc_n2n, net)={
+    edge_index=[2, 938],
+    y=[938],
+  }
+)
+Using structured negtive sampling for target etype 0, pos=10427, #neg=3128
+Using structured negtive sampling for target etype 1, pos=22241, #neg=6672
+Using structured negtive sampling for target etype 2, pos=938, #neg=281
+HeteroData(
+  net={
+    x=[666, 17],
+    y=[666, 1],
+  },
+  device={ x=[4383, 16] },
+  pin={
+    x=[13149, 1],
+    y=[13149, 1],
+  },
+  (device, device-pin, pin)={ edge_index=[2, 13149] },
+  (pin, pin-net, net)={ edge_index=[2, 9043] },
+  (pin, cc_p2n, net)={
+    edge_index=[2, 15102],
+    y=[15102],
+  },
+  (pin, cc_p2p, pin)={
+    edge_index=[2, 17392],
+    y=[17392],
+  },
+  (net, cc_n2n, net)={
+    edge_index=[2, 1384],
+    y=[1384],
+  }
+)
+Using structured negtive sampling for target etype 0, pos=15084, #neg=4525
+Using structured negtive sampling for target etype 1, pos=17386, #neg=5215
+Using structured negtive sampling for target etype 2, pos=1111, #neg=333
+HeteroData(
+  net={
+    x=[12640, 17],
+    y=[12640, 1],
+  },
+  device={ x=[32768, 16] },
+  pin={
+    x=[98304, 1],
+    y=[98304, 1],
+  },
+  (device, device-pin, pin)={ edge_index=[2, 98304] },
+  (pin, pin-net, net)={ edge_index=[2, 77824] },
+  (pin, cc_p2n, net)={
+    edge_index=[2, 158949],
+    y=[158949],
+  },
+  (pin, cc_p2p, pin)={
+    edge_index=[2, 176565],
+    y=[176565],
+  },
+  (net, cc_n2n, net)={
+    edge_index=[2, 24775],
+    y=[24775],
+  }
+)
+Using structured negtive sampling for target etype 0, pos=158364, #neg=47509
+Using structured negtive sampling for target etype 1, pos=175797, #neg=52739
+Using structured negtive sampling for target etype 2, pos=24523, #neg=7356
+load processed ssram, len(data_list)=175413, data_offset=0 
+load processed digtime, len(data_list)=2814, data_offset=1 
+load processed timing_ctrl, len(data_list)=3333, data_offset=2 
+load processed array_128_32_8t, len(data_list)=73569, data_offset=3 
+PID = 3521899
+Building dataset ssram+digtime+timing_ctrl+array_128_32_8t took 00:00:01.37
+Dataloader: Loading success.
+====== Train sandwich+ultra8t to Test ssram+digtime+timing_ctrl+array_128_32_8t ======
+normalizing node_attr 0: tensor([[7.5334e+04, 6.2784e+04, 1.2550e+04, 2.4000e+01, 1.2576e-03, 3.0150e-03,
+         2.0000e+00, 4.0000e-06, 1.7400e-04, 1.2000e+01, 3.3600e+03, 9.6000e-05,
+         1.0000e+00, 1.0000e+00, 1.0000e+00, 1.0000e+00, 1.0000e+00]]) ...
+normalizing node_attr 1: tensor([[1.2800e+02, 3.0000e-06, 2.0000e-06, 2.2499e-13, 6.1933e-06, 2.0000e+00,
+         2.0000e-06, 1.7400e-04, 4.0000e+01, 2.8000e+02, 1.0500e-05, 1.0000e+00,
+         1.0000e+00, 1.0000e+00, 4.0000e+00, 5.0000e+00, 1.0000e+00]]) ...
+self._data.edge_label tensor([0.7145, 0.5362, 0.6778,  ..., 0.6364, 0.7240, 0.8171])
+normalizing node_attr 0: tensor([[8.0000e+02, 5.1200e+02, 8.2400e+02, 7.9200e+02, 4.4080e-04, 1.5360e-05,
+         1.0000e+00, 1.0000e+00, 1.0000e+00, 1.0000e+00, 1.0000e+00, 1.0000e+00,
+         1.0000e+00, 1.0000e+00, 1.0000e+00, 1.0000e+00, 1.0000e+00]]) ...
+normalizing node_attr 1: tensor([[1.0000e+00, 2.7000e-06, 3.0000e-07, 2.0265e-13, 5.5933e-06, 1.0000e+00,
+         1.0000e+00, 1.0000e+00, 1.0000e+00, 1.0000e+00, 1.0000e+00, 1.0000e+00,
+         1.0000e+00, 1.0000e+00, 4.0000e+00, 2.0000e+00, 1.0000e+00]]) ...
+self._data.edge_label tensor([0.6409, 0.4784, 0.4607,  ..., 0.7265, 0.6888, 0.6424])
+调用dataset_sampling处理数据集...
+数据加载器创建完成: 1个训练，1个验证，4个测试

@@ -1,0 +1,70 @@
+============= PID = 3505208 ============= 
+Log file created at: ./logs/regression_ssram_to_digtime+timing_ctrl+array_128_32_8t_20250604_104543.txt
+Parameters:
+  seed: 42
+  train_dataset: ssram
+  test_dataset: digtime+timing_ctrl+array_128_32_8t
+  task: regression
+  max_dist: 350
+  num_workers: 4
+  gpu: 1
+  epochs: 200
+  batch_size: 32
+  lr: 5e-05
+  num_gnn_layers: 4
+  num_head_layers: 2
+  hid_dim: 32
+  dropout: 0.3
+  use_bn: 0
+  act_fn: relu
+  src_dst_agg: concat
+  num_hops: 4
+  to_undirected: 1
+  use_stats: 1
+  log_dir: ./logs
+  use_focal_loss: 0
+  train_sample_rate: 0.1
+  test_sample_rate: 1.0
+  use_amp: 1
+Namespace(seed=42, train_dataset='ssram', test_dataset='digtime+timing_ctrl+array_128_32_8t', task='regression', max_dist=350, num_workers=4, gpu=1, epochs=200, batch_size=32, lr=5e-05, num_gnn_layers=4, num_head_layers=2, hid_dim=32, dropout=0.3, use_bn=0, act_fn='relu', src_dst_agg='concat', num_hops=4, to_undirected=1, use_stats=1, log_dir='./logs', use_focal_loss=0, train_sample_rate=0.1, test_sample_rate=1.0, use_amp=1)
+SealSramDataset includes ['ssram'] circuits
+HeteroData(
+  net={
+    x=[19902, 17],
+    y=[19902, 1],
+  },
+  device={ x=[57417, 16] },
+  pin={
+    x=[172251, 1],
+    y=[172251, 1],
+  },
+  (device, device-pin, pin)={ edge_index=[2, 172251] },
+  (pin, pin-net, net)={ edge_index=[2, 134134] },
+  (pin, cc_p2n, net)={
+    edge_index=[2, 277772],
+    y=[277772],
+  },
+  (pin, cc_p2p, pin)={
+    edge_index=[2, 288604],
+    y=[288604],
+  },
+  (net, cc_n2n, net)={
+    edge_index=[2, 58489],
+    y=[58489],
+  }
+)
+Using structured negtive sampling for target etype 0, pos=277386, #neg=83215
+Using structured negtive sampling for target etype 1, pos=288411, #neg=86523
+Using structured negtive sampling for target etype 2, pos=58471, #neg=17541
+load processed ssram, len(data_list)=17541, data_offset=0 
+PID = 3505208
+Building dataset ssram took 00:00:00.68
+Dataloader: Loading success.
+SealSramDataset includes ['digtime', 'timing_ctrl', 'array_128_32_8t'] circuits
+load processed digtime, len(data_list)=2814, data_offset=0 
+load processed timing_ctrl, len(data_list)=3333, data_offset=1 
+load processed array_128_32_8t, len(data_list)=73569, data_offset=2 
+PID = 3505208
+Building dataset digtime+timing_ctrl+array_128_32_8t took 00:00:00.03
+Dataloader: Loading success.
+====== Train ssram to Test digtime+timing_ctrl+array_128_32_8t ======
