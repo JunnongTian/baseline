@@ -9,6 +9,39 @@ import gc
 import sys
 import datetime
 
+# 主程序入口
+def main():
+    # 解析命令行参数
+    parser = argparse.ArgumentParser(description="主程序参数解析")
+    # 添加命令行参数选项
+    parser.add_argument('--data_path', type=str, help='数据集路径')
+    parser.add_argument('--model_path', type=str, help='模型保存路径')
+    parser.add_argument('--batch_size', type=int, default=32, help='批量大小')
+    parser.add_argument('--epochs', type=int, default=10, help='训练轮数')
+    parser.add_argument('--learning_rate', type=float, default=0.001, help='学习率')
+    args = parser.parse_args()
+
+    # 设置随机种子以保证结果可复现
+    random.seed(0)
+    np.random.seed(0)
+    torch.manual_seed(0)
+
+    # 检查是否有可用的GPU，如果有则使用GPU
+    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+
+    # 创建数据集实例
+    dataset = performat_SramDataset(data_path=args.data_path)
+
+    # 开始下游链接预测训练
+    downstream_link_pred(dataset, args.batch_size, args.epochs, args.learning_rate, device)
+
+    # 清理未使用的内存
+    gc.collect()
+
+# 程序入口
+if __name__ == '__main__':
+    main()
+
 if __name__ == "__main__":
     # STEP 0: Parse Arguments ======================================================================= #
     parser = argparse.ArgumentParser(description="CircuitGPS_simple")

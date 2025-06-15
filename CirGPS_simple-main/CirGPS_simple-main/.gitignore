@@ -1,0 +1,14 @@
+# Ignore a specific directory
+datasets/
+
+# Ignore all .log files
+*.log
+
+# Ignore all .pt files
+*.pt
+*.pkl
+
+*.png
+
+# Ignore Python-specific files
+__pycache__/
